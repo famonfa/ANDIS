@@ -1,0 +1,51 @@
+/*SAN JUAN*/
+
+   @media  (max-width: 650px) {
+      .nota-doble {
+          flex-direction: column;
+          .columna{
+          width: 100%;
+        }
+        } }
+
+
+.nota-sanjuan-dos{
+    margin-top: 3em;
+}
+
+
+.flex-grid {
+    display: flex;
+    justify-content: center;
+    .gallery-pensiones {
+        display: grid;
+        grid-gap: 1em;
+        grid-template-columns: 1fr;
+        padding: 5em ;
+        img {
+            width: 100%;
+            min-width: 20em;
+            
+            max-width: fit-content;
+            cursor:pointer;
+            padding: 0.15em;
+        }
+    } 
+    @media  (min-width: 720px) {
+        .gallery-pensiones {
+            grid-template-columns: 1fr 1fr;
+            
+        }
+        @media  (min-width: 1031px) {
+            .gallery-pensiones {
+                grid-template-columns: 1fr 1fr 1fr;
+            } 
+        }
+        @media  (min-width: 1428px) {
+            .gallery-pensiones {
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                width: 100%;
+            }
+        }
+    }  
+}

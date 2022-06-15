@@ -1,0 +1,74 @@
+/*contacto*/
+@mixin box ($dis, $pad,  $bck,) {
+    display: ($dis);
+    padding:($pad) ;
+    background-color: ($bck);
+}
+
+.main-contacto {
+    padding: 3em;
+    .container-contacto {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        form {
+            background-color:rgb(216, 216, 216, 0.4) ;
+            padding: 2em;
+            label {
+                @include box (block, 0.5em,rgb(216, 216, 216, 0.4))
+            }
+            input {
+                @extend label ;
+                border: white 2px solid;
+            }
+            textarea {
+                @extend input
+            }
+                
+            .btn-contacto {
+                background-color: rgb(216, 216, 216, 0.4);
+                border:white 2px solid;
+                padding: 1em;
+                cursor: pointer;
+                transition: ease-out 0.5s;
+                &:hover {
+                    transform:scale(1.4,1.4) ;
+                    background:#C0CEDD ;
+                }
+            }            
+        }
+    }
+}
+@media  (max-width: 500px) {
+  
+
+@mixin box-input ($p, $m) {
+    padding:($p);
+    margin:($m) ;
+}
+
+    .main-contacto {
+        @include box-input(0.5em ,auto);
+        
+        form {
+            @include box-input(0.5em ,auto);
+            textarea {
+                @include box-input(0.5em ,auto);
+            }
+            input {
+                @include box-input(0.5em ,auto);
+            }
+            label {
+                @include box-input(0.5em ,auto);
+            }
+            
+        }
+    } 
+}
+
+ /*contacto*/
+   
+
+    
+ 

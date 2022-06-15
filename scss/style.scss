@@ -1,0 +1,40 @@
+@import "./abstract/variables";
+
+@import "./components/header";
+
+@import "./components/main";
+
+@import "./components/sanjuan";
+
+@import "./components/buenosaires";
+
+@import "./components/santafe";
+
+@import "./components/mendoza";
+
+@import "./components/footer";
+
+@import"./components/jujuy";
+
+@import"./components/corrientes";
+
+@import"./components/tucuman";
+
+@import"./components/chaco";
+
+
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Encode Sans', sans-serif;
+    text-decoration: none;
+    scroll-behavior: smooth;
+  
+ 
+    
+}
+

@@ -1,0 +1,26 @@
+/*footer*/
+
+footer {
+    width: 100%;
+    background-color: map-get($color, nav );
+    padding: 10px;
+    bottom: auto;
+    display: flex;
+    justify-content: space-evenly;
+    
+    bottom: 0;
+   
+        .img-footer {
+            margin-left: 1em;
+            margin-right: 1em;
+            width: 8em;
+            opacity: 0.5;
+            
+        }
+    
+    p {
+        margin: 5px 35px;
+    }
+}
+
+/*footer*/
