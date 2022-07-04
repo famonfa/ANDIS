@@ -127,19 +127,19 @@
   flex-wrap: wrap;
 }
 .nota-doble .bajada {
-  margin-top: 1em;
+  margin-top: -1.5em;
   width: 100%;
   text-align: justify;
   text-justify: newspaper;
   padding: 0.5em;
 }
 .nota-doble .titulo {
-  padding: 2em;
+  padding: 1.5em;
 }
 
 .carousel {
   display: flex;
-  max-width: 75em;
+  max-width: 60em;
 }
 
 .carousel-inner img {
@@ -318,45 +318,9 @@ button:active {
   }
 }
 
-.main-maderas {
-  padding: 2em 2em;
-}
-.main-maderas .container__maderas {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.main-maderas .container__maderas .card {
-  display: flex;
-  justify-content: center;
-  background: rgba(216, 216, 216, 0.4);
+.imagen-nota-stfe {
+  max-width: 20em;
   padding: 1em;
-  margin-left: 1em;
-  margin-bottom: 1em;
-  z-index: 1;
-}
-.main-maderas .container__maderas .card .card-img-top {
-  max-width: 8em;
-  align-self: center;
-  border-radius: 200px;
-  margin-bottom: 1em;
-  transition: all 0.5s;
-  z-index: 99;
-}
-.main-maderas .container__maderas .card .card-img-top:hover {
-  transform: scale(1.1);
-  border: 1.5px solid white;
-}
-.main-maderas .container__maderas .card .card-img-top .card-title {
-  font-weight: 300;
-  padding: 0.5em;
-}
-.main-maderas .container__maderas .card .card-img-top .card-text {
-  width: 80%;
-  text-align: center;
-  align-self: center;
-  padding: 1em 0;
-  border-top: 1px solid white;
 }
 
 /*contacto*/
@@ -517,6 +481,45 @@ footer p {
 .radio .radio-img {
   width: 20em;
   padding: 2em;
+}
+
+.vid-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
+  flex-wrap: wrap;
+  margin-top: 1em;
+}
+
+.vid-con h3 {
+  width: 100%;
+  text-align: justify;
+}
+
+.salta-vid {
+  width: 100%;
+}
+
+@media (min-width: 800px) {
+  .vid-con {
+    flex-direction: row;
+  }
+
+  .vid-con h3 {
+    width: 45%;
+    padding: 1em;
+    margin-top: 1em;
+    font-size: 2rem;
+  }
+
+  .salta-vid {
+    width: 45%;
+  }
+}
+.imagen-nota-stfe {
+  max-width: 20em;
+  padding: 1em;
 }
 
 * {

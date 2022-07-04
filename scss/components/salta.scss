@@ -1,0 +1,38 @@
+.vid-con {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1em;
+    flex-wrap: wrap;
+    margin-top: 1em;
+
+}
+
+.vid-con h3 {
+    width: 100%;
+    text-align: justify;
+   
+}
+
+.salta-vid {
+    width: 100%;
+}
+
+
+@media  (min-width: 800px) {
+    .vid-con {
+        flex-direction: row;
+    }
+
+    .vid-con h3{
+        width: 45%;
+        padding: 1em;
+        margin-top: 1em;
+        font-size: 2rem;
+    }
+
+    .salta-vid {
+        width: 45%;
+    }
+
+}
