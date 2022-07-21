@@ -1,33 +1,22 @@
-/*conocenos*/
-.flex-grid-muebles {
-    display: flex;
-    justify-content: center;
-    .gallery-muebles {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: 1fr;
-        padding: 5em ;
-        img {
-            width: 250px;
-            max-width: fit-content;
-            cursor:pointer;
-            padding: 0.15em;
-        }
-    } 
-    @media  (min-width: 500px) {
-        .gallery-muebles {
-            grid-template-columns: 1fr 1fr;
-        }
-        @media  (min-width: 800px) {
-            .gallery-muebles {
-                grid-template-columns: 1fr 1fr 1fr;
-            } 
-        }
-        @media  (min-width: 1100px) {
-            .gallery-muebles {
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-            }
-        }
-    }  
+#card-bsas {
+   display: flex;
+   width: 100%;
+   padding: 2em;
+   flex-wrap: wrap;
+   gap: 1em;
+   align-items: center;
+   justify-content: center;
+   
+  
+   
+
 }
 
+
+.card-loc {
+    padding: 1em;
+   background-color: map-get($color, primary );;
+
+    width: fit-content;
+    
+}

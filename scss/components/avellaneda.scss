@@ -1,0 +1,32 @@
+.img-flex {
+    max-width: 17em;
+    margin: 0.4em;
+
+}
+
+.img-flex-2 {
+    width: 25em;
+    margin: 0.4em;
+
+}
+
+.img-flex-3 {
+    width: 25em;
+    margin: 0.4em;
+
+}
+
+@media  (max-width: 450px) {
+    .img-flex-2 {
+        width: 80%;
+    }
+} 
+
+.img-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 1em;
+}
+

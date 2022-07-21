@@ -181,7 +181,10 @@
             padding: 0.5em;
         }
         .titulo {
+            margin-left: 1em;
+            margin-right: 1em;
             padding: 1.5em;
+            
         }
     }
   
@@ -201,6 +204,8 @@
 
      //btn
 
+  
+
      button {
        
         position: relative;
@@ -219,8 +224,10 @@
         border-radius: 10px;
         box-shadow: inset 0 0 0 0 map-get($color, primary );
         margin-left: 1.5em;
+        align-self: center;
       }
       
+
       button:hover {
         color: white;
         box-shadow: inset 0 -100px 0 0 map-get($color, primary );
@@ -235,7 +242,64 @@
           width: 100%;
       }
 
-
+.img-sol {
+    padding: 2em;
+    
+    max-width: 100%;
+    align-self: center;
+}
 
    //btn
 
+   .img-sanvicente {
+    padding: 1em;
+    padding-bottom: 2em;
+    width: 100%;
+   }
+
+   @media  (min-width: 990px) {
+    .img-sanvicente {
+        width: 70%;
+        
+    }
+} 
+
+.img-sanvicente-dos {
+    padding: 1em;
+    padding-bottom: 2em;
+    width: 70%;
+   }
+
+
+    .nota-doble-dos {
+        padding-top: 1.5em;
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+        .columna {
+            display: block;
+            padding: 0.5em;
+            width: 40%;
+            text-align: justify;
+            text-justify: newspaper;
+            flex-wrap: wrap;
+        }
+        .bajada {
+            margin-top: -1.5em;
+            width: 100%;
+            text-align: justify;
+            text-justify: newspaper;
+            padding: 0.5em;
+        }
+        .titulo {
+            margin-left: 1em;
+            margin-right: 1em;
+            padding: 1.5em;
+            
+        }
+    }
+   
